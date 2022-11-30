@@ -42,3 +42,9 @@ body {
     width: 50%;
     height: 600px;
 }
+
+#drawing {
+    width: 100%;
+    height: 50vh;
+    border: solid 5px black;
+}

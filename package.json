@@ -1,0 +1,22 @@
+{
+  "name": "js-static-solver",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsba2/js-static-solver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsba2/js-static-solver/issues"
+  },
+  "homepage": "https://github.com/itsba2/js-static-solver#readme",
+  "dependencies": {
+    "chart.js": "^4.0.1"
+  }
+}

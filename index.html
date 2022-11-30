@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Statick Solver</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header id="app-header">
-        <h1>Simply Supported Beam Solver</h1>
+        <h1>Static Solver</h1>
     </header>
     <main id="app-main">
-        <!-- <form action="post" onsubmit=""></form> -->
         <div>
             <label for="solverType">Solver type:</label>
             <select name="solverType" id="solverType">
@@ -46,15 +45,16 @@
 
         </div>
         <button id="calculateButton" type="button">Calculate</button>
+        <button id="resetButton" type="button">Reset</button>
     </main>
     <section id="app-results">
         <h1>Results</h1>
         <div id="results"></div>
+        <canvas id="shearDiagram"></canvas>
+        <canvas id="momentDiagram"></canvas>
     </section>
-    <canvas id="app-canvas">
-
-    </canvas>
-    <script src="/scripts/pointLoad.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 
 </html>
