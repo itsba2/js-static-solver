@@ -1,0 +1,44 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-header {
+    font-size: large;
+    font-weight: bolder;
+    color: brown;
+    text-align: center;
+}
+
+#app-main {
+    background-color: beige;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#app-canvas {
+    /* border: 3px solid brown; */
+    width: 50%;
+    height: 600px;
+}

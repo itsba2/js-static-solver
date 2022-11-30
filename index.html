@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="app-header">
+        <h1>Simply Supported Beam Solver</h1>
+    </header>
+    <main id="app-main">
+        <!-- <form action="post" onsubmit=""></form> -->
+        <div>
+            <label for="solverType">Solver type:</label>
+            <select name="solverType" id="solverType">
+                <option value="ssb">Simply Supported Beam</option>
+            </select>
+        </div>
+        <div>
+            <label for="spanLength">Span length:</label>
+            <input type="text" name="spanLength" id="spanLength">
+        </div>
+        <div>
+            <label for="loadType">Load type:</label>
+            <select name="loadType" id="loadType">
+                <option value="point">Point load</option>
+                <option value="distributed">Distributed load</option>
+            </select>
+        </div>
+        <div class="input-group" id="pointLoadInputs">
+            <div>
+                <label for="pointLoadMagnitude">Magnitude of point load:</label>
+                <input type="text" name="pointLoadMagnitude" id="pointLoadMagnitude">
+            </div>
+            <div>
+                <label for="loadDistanceFromRef">Distance of load from ref:</label>
+                <input type="text" name="loadDistanceFromRef" id="loadDistanceFromRef">
+            </div>
+        </div>
+        <div class="input-group" id="distributedLoadInputs">
+
+        </div>
+        <button id="calculateButton" type="button">Calculate</button>
+    </main>
+    <section id="app-results">
+        <h1>Results</h1>
+        <div id="results"></div>
+    </section>
+    <canvas id="app-canvas">
+
+    </canvas>
+    <script src="/scripts/pointLoad.js"></script>
+</body>
+
+</html>
